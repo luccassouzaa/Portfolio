@@ -16,6 +16,7 @@ body{
 }
 
 .main{
+    background-color: rgba(0, 0, 0, 0.113);
     padding: 1rem;
     margin: 1rem;
     border: 1px solid #ffffff;
