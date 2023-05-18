@@ -38,7 +38,7 @@
     height: 2rem;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url('/assets/img/icons/angle-up-solid.svg');
+    background-image: url('../img/icons/angle-up-solid.svg');
     transform: rotate(180deg);
     transition: .25s;
 }

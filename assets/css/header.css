@@ -47,23 +47,23 @@
 
 .information .job::before {
     fill: #fff;
-    background-image: url('/assets/img/icons/user-solid.svg');
+    background-image: url('../img/icons/user-solid.svg');
 }
 
 .information .location::before {
-    background-image: url('/assets/img/icons/location-dot-solid.svg');
+    background-image: url('../img/icons/location-dot-solid.svg');
 }
 
 .information .phone::before {
-    background-image: url('/assets/img/icons/phone-solid.svg');
+    background-image: url('../img/icons/phone-solid.svg');
 }
 
 .information .github::before {
-    background-image: url('/assets/img/icons/github.svg');
+    background-image: url('../img/icons/github.svg');
 }
 
 .information .mail::before {
-    background-image: url('/assets/img/icons/envelope-solid.svg');
+    background-image: url('../img/icons/envelope-solid.svg');
 }
 
 @media only screen and (min-width: 768px) {
