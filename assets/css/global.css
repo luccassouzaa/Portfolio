@@ -38,7 +38,7 @@ body{
 
 .main::after{
     content: '';
-    background-image: url(/assets/img/background-bot.svg);
+    background-image: url('../img/background-bot.svg');
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
