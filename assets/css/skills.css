@@ -72,3 +72,30 @@
     background-image: url('../img/icons/check-solid.svg');
     margin-right: .5rem ;
 }
+
+@media only screen and (max-width: 600px) {
+    .experience .personal .skills-personal{
+        display: flex;
+        flex-direction: column;
+    }
+    .experience .personal li{
+        list-style: none;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .experience .image-experience{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .experience .personal .skills-personal{
+        display: flex;
+        flex-direction: column;
+    }
+    .experience .personal li{
+        list-style: none;
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
