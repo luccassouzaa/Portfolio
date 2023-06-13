@@ -73,7 +73,7 @@
     margin-right: .5rem ;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 670px) {
     .experience .personal .skills-personal{
         display: flex;
         flex-direction: column;
@@ -97,5 +97,11 @@
         list-style: none;
         width: 100%;
         justify-content: flex-start;
+    }
+
+    .experience .professional img{
+        margin: 0 auto;
+        width: 3.6rem;
+        height: 3.6rem;
     }
 }
