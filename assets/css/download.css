@@ -1,0 +1,48 @@
+.downloadcv{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: .25s;
+    width: 100%;
+}
+
+.downloadcv .download{
+    cursor: pointer;
+    width: 300px;
+    height: 60px;
+    border: none;
+    border-radius: .30rem;
+    padding: 1rem;
+    background-color: rgb(93, 209, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .25s;
+}
+
+.downloadcv a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.downloadcv a:hover{
+    text-decoration: none;
+    border: none;
+}
+
+.downloadcv .download:hover{
+    background-color: rgba(6, 53, 225, 0.147);
+    color: rgb(255, 255, 255);
+    transition: .25s;
+}
+
+@media only screen and (max-width: 730px) {
+    .downloadcv .download{
+        width: 100%;
+        transition: .25s;
+    }
+}
