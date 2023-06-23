@@ -29,7 +29,10 @@
     padding: 2rem 0;
     font-weight: 800;
     font-size: 1.2rem;
+}
 
+.experience .personal span{
+    margin-right: 2rem;
 }
 
 .experience .image-experience{
@@ -38,12 +41,10 @@
     grid-template-columns: 1fr 1fr;
 }
 
-/* Personal */
-
 .experience .personal{
     display: flex;
     flex-direction: row;  
-    max-width: 200px;
+    max-width: 350px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -73,7 +74,7 @@
     margin-right: .5rem ;
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 768px) {
     .experience .personal .skills-personal{
         display: flex;
         flex-direction: column;
@@ -85,6 +86,9 @@
     }
     .experience .image-experience{
         grid-template-columns: 1fr;
+    }
+    .experience .personal span{
+        margin-right: 0rem;
     }
 }
 
