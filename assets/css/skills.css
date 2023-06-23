@@ -52,7 +52,7 @@
     list-style: none;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .experience .personal .skills-personal{
