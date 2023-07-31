@@ -1,32 +1,32 @@
-.education{
-    color: #fff;
-    list-style: none;
+.education {
+  color: #fff;
+  list-style: none;
 }
 
-.education h2{
-    padding: .2rem;
-    margin: .7rem .7rem .7rem 0;
+.education h2 {
+  padding: 0.2rem;
+  margin: 0.7rem 0.7rem 0.7rem 0;
 }
 
-.education span::before{
-    content: '';
-    display: inline-block;
-    padding-right: .5rem;
-    width: 1rem;
-    height: 1rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url('../img/icons/calendar-days-solid.svg');
+.education span::before {
+  content: "";
+  display: inline-block;
+  padding-right: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/icons/calendar-days-solid.svg");
 }
 
-.education span{
-    padding: 1rem;
+.education span {
+  padding: 1rem;
 }
 
-.education .course{
-    list-style: none;
+.education .course {
+  list-style: none;
 }
 
-.education p{
-    padding: 1rem;
+.education p {
+  padding: 1rem;
 }

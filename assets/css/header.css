@@ -1,102 +1,114 @@
 .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header .photo {
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
 }
 
 .header .title {
-    font-family: 'Neue Machina';
-    text-align: center;
+  font-family: "Neue Machina";
+  text-align: center;
+  max-width: 415px;
 }
 
-.information{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
+.information {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  /* align-items: flex-start; */
+  width: 100%;
 }
 
-.information a{
-    text-decoration: none;
-    color: #73d3ff;
+.information a {
+  text-decoration: none;
+  color: #73d3ff;
 }
 
 .information p {
-    margin: .7rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 1.125rem;
+  margin: 0.7rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.125rem;
 }
 
 .information p::before {
-    content: '';
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-right: .5rem;
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 0.5rem;
 }
 
 .information .job::before {
-    fill: #fff;
-    background-image: url('../img/icons/user-solid.svg');
+  fill: #fff;
+  background-image: url("../img/icons/user-solid.svg");
 }
 
 .information .location::before {
-    background-image: url('../img/icons/location-dot-solid.svg');
+  background-image: url("../img/icons/location-dot-solid.svg");
 }
 
 .information .phone::before {
-    background-image: url('../img/icons/phone-solid.svg');
+  background-image: url("../img/icons/phone-solid.svg");
 }
 
 .information .github::before {
-    background-image: url('../img/icons/github.svg');
+  background-image: url("../img/icons/github.svg");
 }
 
 .information .mail::before {
-    background-image: url('../img/icons/envelope-solid.svg');
+  background-image: url("../img/icons/envelope-solid.svg");
 }
 
 .information .linkedin::before {
-    background-image: url('../img/icons/linkedin.svg');
+  background-image: url("../img/icons/linkedin.svg");
 }
 
 @media only screen and (min-width: 768px) {
-    .header {
-        display: grid;
-        justify-content: space-evenly;
-        grid-template-areas: 
-        "photo title"
-        "photo information";
-    }
-    .header .photo{
-        grid-area: photo;
-        margin: 0 auto;
-    }    
+  .header {
+    display: flex;
+    justify-content: space-evenly;
+    grid-template-areas:
+      "photo title"
+      "photo information";
+  }
+  .header .photo {
+    grid-area: photo;
+    margin: 0 auto;
+  }
 
-    .header .title{
-        grid-area: title;
-        text-align: start;
-        max-width: 216px;
-    } 
+  .header .title {
+    grid-area: title;
+    text-align: start;
+    max-width: 415px;
+  }
 
-    .header .information{
-        grid-area: information;
-    }
+  .header .information {
+    grid-area: information;
+  }
 }
 
-@media only screen and (max-width: 450px) {
-    .header .photo {
-        width: 220px;
-        height: 220px;
-    }
+@media only screen and (max-width: 500px) {
+  .information {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .information p {
+    font-size: 0.825rem;
+  }
+
+  .header .photo {
+    width: 220px;
+    height: 220px;
+  }
 }

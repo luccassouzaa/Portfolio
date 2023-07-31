@@ -1,111 +1,111 @@
-
 /* Professional */
 
-.experience{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: row;   
-    color: #fff;
-    max-width: 100%;
-    padding-bottom: 2rem;
+.experience {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  color: #fff;
+  max-width: 100%;
+  padding-bottom: 2rem;
 }
 
-.experience .professional img{
-    margin: 0 auto;
-    width: 6rem;
-    height: 6rem;
+.experience .professional img {
+  margin: 0 auto;
+  width: 6rem;
+  height: 6rem;
 }
 
-.experience .professional{
-    display: flex;
-    flex-direction: row;  
-    max-width: 245px;
-    flex-wrap: wrap;
-    justify-content: center;
+.experience .professional {
+  display: flex;
+  flex-direction: row;
+  max-width: 245px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.experience .professional span, .experience .personal span{
-    padding: 2rem 0;
-    font-weight: 800;
-    font-size: 1.2rem;
+.experience .professional span,
+.experience .personal span {
+  padding: 2rem 0;
+  font-weight: 800;
+  font-size: 1.2rem;
 }
 
-.experience .personal span{
-    margin-right: 2rem;
+.experience .personal span {
+  margin-right: 2rem;
 }
 
-.experience .image-experience{
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: 1fr 1fr;
+.experience .image-experience {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
 }
 
-.experience .personal{
-    display: flex;
-    flex-direction: row;  
-    max-width: 350px;
-    flex-wrap: wrap;
-    justify-content: center;
+.experience .personal {
+  display: flex;
+  flex-direction: row;
+  max-width: 350px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.experience .personal li{
-    list-style: none;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
+.experience .personal li {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
 }
 
-.experience .personal .skills-personal{
-    display: grid;
-    gap: 2rem;
-    white-space: pre-line;
-    grid-template-columns: 1fr 1fr;
+.experience .personal .skills-personal {
+  display: grid;
+  gap: 2rem;
+  white-space: pre-line;
+  grid-template-columns: 1fr 1fr;
 }
 
-.experience li::before{
-    content: '';
-    display: inline-block;
-    width: 1.3rem;
-    height: 1rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url('../img/icons/check-solid.svg');
-    margin-right: .5rem ;
+.experience li::before {
+  content: "";
+  display: inline-block;
+  width: 1.3rem;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/icons/check-solid.svg");
+  margin-right: 0.5rem;
 }
 
 @media only screen and (max-width: 768px) {
-    .experience .personal .skills-personal{
-        display: flex;
-        flex-direction: column;
-    }
-    .experience .personal li{
-        list-style: none;
-        width: 100%;
-        justify-content: flex-start;
-    }
-    .experience .image-experience{
-        grid-template-columns: 1fr;
-    }
-    .experience .personal span{
-        margin-right: 0rem;
-    }
+  .experience .personal .skills-personal {
+    display: flex;
+    flex-direction: column;
+  }
+  .experience .personal li {
+    list-style: none;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .experience .image-experience {
+    grid-template-columns: 1fr;
+  }
+  .experience .personal span {
+    margin-right: 0rem;
+  }
 }
 
 @media only screen and (max-width: 400px) {
-    .experience .personal .skills-personal{
-        display: flex;
-        flex-direction: column;
-    }
-    .experience .personal li{
-        list-style: none;
-        width: 100%;
-        justify-content: flex-start;
-    }
+  .experience .personal .skills-personal {
+    display: flex;
+    flex-direction: column;
+  }
+  .experience .personal li {
+    list-style: none;
+    width: 100%;
+    justify-content: flex-start;
+  }
 
-    .experience .professional img{
-        margin: 0 auto;
-        width: 3.6rem;
-        height: 3.6rem;
-    }
+  .experience .professional img {
+    margin: 0 auto;
+    width: 3.6rem;
+    height: 3.6rem;
+  }
 }

@@ -1,65 +1,65 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 @font-face {
-    font-family: 'Neue Machina';
-    src: url('../fonts/neue-machina-regular.otf');
+  font-family: "Neue Machina";
+  src: url("../fonts/neue-machina-regular.otf");
 }
 
-body{
-    background-color: rgb(24, 24, 24);
-    color: #73d3ff;
+body {
+  background-color: rgb(24, 24, 24);
+  color: #73d3ff;
 }
 
-.main{
-    background-color: rgba(0, 0, 0, 0.113);
-    padding: 1rem;
-    margin: 1rem;
-    border: 1px solid #ffffff;
-    border-radius: 1rem;
+.main {
+  background-color: rgba(0, 0, 0, 0.113);
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid #ffffff;
+  border-radius: 1rem;
 }
 
-.main::before{
-    content: "";
-    background-image: url('../img/background.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: inline-block;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    height: 120vh;
-    width: 100vw;
-    z-index: -1;
+.main::before {
+  content: "";
+  background-image: url("../img/background.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 120vh;
+  width: 100vw;
+  z-index: -1;
 }
 
-.main::after{
-    content: '';
-    background-image: url('../img/background-bot.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: inline-block;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    height: 80vh;
-    width: 60vw;
-    z-index: -1;
-    transform: rotate(180deg);
+.main::after {
+  content: "";
+  background-image: url("../img/background-bot.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 80vh;
+  width: 60vw;
+  z-index: -1;
+  transform: rotate(180deg);
 }
 
 @media only screen and (min-width: 768px) {
-    .main{
-        max-width: 1024px;
-        margin: 2rem auto;
-    }
+  .main {
+    max-width: 1024px;
+    margin: 2rem auto;
+  }
 
-    .main::before, 
-    .main::after{
-        width: 70vw;
-    }
+  .main::before,
+  .main::after {
+    width: 70vw;
+  }
 }

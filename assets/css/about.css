@@ -1,73 +1,71 @@
-.aboutme{
-    color: #fff;
-    list-style: none;
+.aboutme {
+  color: #fff;
+  list-style: none;
 }
 
-.aboutme li{
-    margin: .7rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 1.125rem;
-    justify-content: center;
+.aboutme li {
+  margin: 0.7rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.125rem;
+  justify-content: center;
 }
 
-.aboutme li::before{
-    content: '';
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-right: .5rem;
+.aboutme li::before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 0.5rem;
 }
 
-.aboutme .aboutNow, .aboutNowUni, .aboutFuture, .aboutFutureUni{
-    padding: 1rem;
-    margin: .5rem;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    /* background-color: rgba(0, 13, 255, 0.609); */
-    border: 1px solid white;
-    border-radius: 1rem;
+.aboutme .aboutNow,
+.aboutNowUni,
+.aboutFuture,
+.aboutFutureUni {
+  padding: 1rem;
+  margin: 0.5rem;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  /* background-color: rgba(0, 13, 255, 0.609); */
+  border: 1px solid white;
+  border-radius: 1rem;
 }
 
-.aboutNow::before{
-    background-image: url('../img/icons/windows.svg');
+.aboutNow::before {
+  background-image: url("../img/icons/windows.svg");
 }
-.aboutNowUni::before{
-    background-image: url('../img/icons/graduation-cap-solid.svg');
+.aboutNowUni::before {
+  background-image: url("../img/icons/graduation-cap-solid.svg");
 }
-.aboutFuture::before{
-    background-image: url('../img/icons/desktop-solid.svg');
+.aboutFuture::before {
+  background-image: url("../img/icons/desktop-solid.svg");
 }
-.aboutFutureUni::before{
-    background-image: url('../img/icons/rocket-solid.svg');
+.aboutFutureUni::before {
+  background-image: url("../img/icons/rocket-solid.svg");
 }
 
 @media only screen and (max-width: 600px) {
-    .aboutme li{
-        font-size: 0.90rem;
-    }
+  .aboutme li {
+    font-size: 0.9rem;
+  }
 }
 
 @media only screen and (max-width: 450px) {
-    .aboutNow::before{
-        background-image: none;
-
-    }
-    .aboutNowUni::before{
-        background-image: none;
-
-    }
-    .aboutFuture::before{
-        background-image: none;
-
-    }
-    .aboutFutureUni::before{
-        background-image: none;
-    }
-
-    
+  .aboutNow::before {
+    background-image: none;
+  }
+  .aboutNowUni::before {
+    background-image: none;
+  }
+  .aboutFuture::before {
+    background-image: none;
+  }
+  .aboutFutureUni::before {
+    background-image: none;
+  }
 }
