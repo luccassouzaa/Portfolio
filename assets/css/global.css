@@ -1,0 +1,119 @@
+<<<<<<< Updated upstream
+=======
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url("../fonts/neue-machina-regular.otf");
+}
+
+body {
+  background: linear-gradient(rgb(40, 5, 135), rgb(12, 187, 251));
+  background-size: contain;
+  color: #ffffff;
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.316);
+  padding: 1.38rem;
+  margin: 1rem;
+  border: 1px solid #ffffff00;
+  border-radius: 1rem;
+}
+
+/* AQUI TEM O CODIGO DO LINK DA MAIN E DO GRID DA MAIN TOP */
+
+.information {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  /* align-items: flex-start; */
+  width: 100%;
+}
+
+.information a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.information p {
+  margin: 0.7rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.125rem;
+}
+
+.information p::before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 0.5rem;
+}
+
+.information .job::before {
+  fill: #fff;
+  background-image: url("../img/icons/user-solid.svg");
+}
+
+.information .location::before {
+  background-image: url("../img/icons/location-dot-solid.svg");
+}
+
+.information .phone::before {
+  background-image: url("../img/icons/phone-solid.svg");
+}
+
+.information .github::before {
+  background-image: url("../img/icons/github.svg");
+}
+
+.information .mail::before {
+  background-image: url("../img/icons/envelope-solid.svg");
+}
+
+.information .linkedin::before {
+  background-image: url("../img/icons/linkedin.svg");
+}
+
+@media only screen and (min-width: 768px) {
+  .main {
+    max-width: 1024px;
+    margin: 2rem auto;
+  }
+
+  .main::before,
+  .main::after {
+    width: 70vw;
+  }
+
+  .information {
+    grid-area: information;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .information {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .information p {
+    font-size: 0.825rem;
+  }
+}
+>>>>>>> Stashed changes

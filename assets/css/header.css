@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header .photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+}
+
+.header .title {
+  font-family: "Neue Machina";
+  text-align: center;
+  max-width: 415px;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-evenly;
+    grid-template-areas:
+      "photo title"
+      "photo information";
+  }
+  .header .photo {
+    grid-area: photo;
+    margin: 0 auto;
+  }
+
+  .header .title {
+    grid-area: title;
+    text-align: start;
+    max-width: 415px;
+  }
+
+  .header {
+    grid-area: information;
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+  .header .photo {
+    width: 220px;
+    height: 220px;
+  }
+}
