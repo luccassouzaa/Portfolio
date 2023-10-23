@@ -7,6 +7,12 @@
   margin-bottom: 0.7rem;
 }
 
+.experience-professional h5{
+  padding: 0.2rem;
+  margin-bottom: 0.7rem;
+  text-decoration:underline;
+}
+
 .experience-professional span {
   padding: 1rem;
 }
@@ -22,7 +28,7 @@
   background-image: url("../img/icons/calendar-days-solid.svg");
 }
 
-.experience-professional .daionjeans {
+.experience-professional .work {
   list-style: none;
 }
 
