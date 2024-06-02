@@ -96,13 +96,13 @@
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px){
   .information {
     grid-template-columns: 1fr;
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 400px){
   .information p {
     font-size: 0.825rem;
   }
