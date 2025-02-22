@@ -1,27 +1,35 @@
 ��/* Professional */
 
+#skills_experience{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .experience {
   display: flex;
   flex-wrap: wrap;
+  /* align-items: center; */
   justify-content: space-around;
   flex-direction: row;
-  color: #fff;
+  color: #ffffff;
   max-width: 100%;
   padding-bottom: 2rem;
-}
-
-.experience .professional img {
-  margin: 0 auto;
-  width: 6rem;
-  height: 6rem;
 }
 
 .experience .professional {
   display: flex;
   flex-direction: row;
-  max-width: 245px;
+  max-width: 350px;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.experience .professional li{
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .experience .professional span,
@@ -30,6 +38,12 @@
   font-weight: 800;
   font-size: 1.2rem;
 }
+
+#sap_professional_experience {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+} 
 
 .experience .personal span {
   margin-right: 2rem;
@@ -42,6 +56,7 @@
 }
 
 .experience .personal {
+  color: white;
   display: flex;
   flex-direction: row;
   max-width: 350px;
@@ -50,10 +65,17 @@
 }
 
 .experience .personal li {
+  /* color: white; */
   list-style: none;
   width: 100%;
   display: flex;
   justify-content: flex-start;
+}
+
+.experience .professional .skills-professional {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
 }
 
 .experience .personal .skills-personal {
@@ -75,6 +97,38 @@
 }
 
 @media only screen and (max-width: 768px){
+
+  .experience .professional{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #sap_professional_experience {
+    /* grid-column: span 2; */
+    display: flex;
+    justify-content: start;
+}
+
+  .experience .professional .skills-professional {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+  }
+
+  .experience .professional .skills-professional {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+  }
+
+  .experience .personal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .experience .personal .skills-personal {
     display: flex;
     flex-direction: column;
