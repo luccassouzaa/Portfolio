@@ -6,21 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luccas Souza | Developer web</title>
 
-    <!-- main -->
-    <link rel="stylesheet" href="assets/css/about.css" />
-    <link rel="stylesheet" href="assets/css/acordeon.css" />
-    <link rel="stylesheet" href="assets/css/education.css" />
-    <link rel="stylesheet" href="assets/css/download.css" />
-    <link rel="stylesheet" href="assets/css/header.css" />
-    <link rel="stylesheet" href="assets/css/global.css" />
-    <link rel="stylesheet" href="assets/css/portfolio.css" />
-    <link rel="stylesheet" href="assets/css/languages.css" />
-    <link rel="stylesheet" href="assets/css/skills.css" />
-    <link rel="stylesheet" href="assets/css/experience-professional.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-    <!-- estudo -->
-
-    <!-- Normalize -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -29,7 +16,6 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -39,14 +25,42 @@
   </head>
 
   <body>
-    <main class="main">
-      <header class="header">
-        <!-- <img src="assets/img/foto perfil.jpg" alt="Foto-Profile" class="photo"> -->
+    <div class="lang-toggle-container">
+      <span>PT</span>
+      <label class="lang-switch">
+        <input type="checkbox" id="lang-toggle-checkbox" />
+        <span class="slider round"></span>
+      </label>
+      <span>EN</span>
+    </div>
 
-        <h1 class="title">Hello, i'm Luccas Souza.</h1>
+    <main class="main">
+      <button
+        class="theme-toggle"
+        id="theme-toggle-btn"
+        data-lang-pt="Mudar Tema"
+        data-lang-en="Change Theme"
+      >
+        Mudar Tema
+      </button>
+
+      <header class="header">
+        <h1
+          class="title"
+          data-lang-pt="Olá, eu sou o Luccas Souza."
+          data-lang-en="Hello, I'm Luccas Souza."
+        >
+          Olá, eu sou o Luccas Souza.
+        </h1>
 
         <div class="information">
-          <p class="job">Estagiário na Enel - Data Science</p>
+          <p
+            class="job"
+            data-lang-pt="Analista de segurança da informação junior - Leega"
+            data-lang-en="Junior Information Security Analyst - Leega"
+          >
+            Analista de segurança da informação junior - Leega
+          </p>
           <p class="location">São Paulo - SP</p>
           <p class="phone">
             <a href="https://wa.me/5511940768214" target="_blank"
@@ -68,42 +82,86 @@
       </header>
 
       <section class="acordeon">
-        <button class="trigger" type="button">Sobre mim</button>
+        <button
+          class="trigger"
+          type="button"
+          data-lang-pt="Sobre mim"
+          data-lang-en="About me"
+        >
+          Sobre mim
+        </button>
         <div class="content">
           <ul class="aboutme">
-            <li class="aboutNow">
-              Atualmente estágiario na área de data science na empresa Enel
+            <li
+              class="aboutNow"
+              data-lang-pt="Atualmente analista de segurança da informação junior na Leega - Equipe de Governança de Acessos"
+              data-lang-en="Currently Junior Information Security Analyst at Leega - Access Governance Team"
+            >
+              Atualmente analista de segurança da informação junior na Leega
+              Equipe de Governança de Acessos
             </li>
-            <li class="aboutNowUni">
-              Cursando Ciências da Computação - 7º Semestre
+            <li
+              class="aboutNowUni"
+              data-lang-pt="Cursando Ciências da Computação - 8º Semestre"
+              data-lang-en="Studying Computer Science - 8th Semester"
+            >
+              Cursando Ciências da Computação - 8º Semestre
             </li>
           </ul>
         </div>
       </section>
 
       <section class="acordeon">
-        <button class="trigger" type="button">Habilidades</button>
+        <button
+          class="trigger"
+          type="button"
+          data-lang-pt="Habilidades"
+          data-lang-en="Skills"
+        >
+          Habilidades
+        </button>
         <div class="content">
           <ul class="experience" id="skills_experience">
             <div class="professional">
-              <span>Habilidades Pessoais</span>
+              <span
+                data-lang-pt="Habilidades Profissionais"
+                data-lang-en="Professional Skills"
+                >Habilidades Profissionais</span
+              >
               <ul class="skills-professional">
                 <li>Python</li>
                 <li>Power Bi</li>
-                <li>SQL</li> 
+                <li>SQL</li>
                 <li>Excel</li>
                 <li id="sap_professional_experience">SAP</li>
               </ul>
             </div>
             <div class="personal">
-              <span>Habilidades Pessoais</span>
+              <span
+                data-lang-pt="Habilidades Pessoais"
+                data-lang-en="Personal Skills"
+                >Habilidades Pessoais</span
+              >
               <ul class="skills-personal">
-                <li>Raciocínio Logico</li>
-                <li>Organização</li>
-                <li>Focado</li>
-                <li>Comunicação</li>
-                <li>Trabalho em Equipe</li>
-                <li>Comprometimento</li>
+                <li
+                  data-lang-pt="Raciocínio Logico"
+                  data-lang-en="Logical Reasoning"
+                >
+                  Raciocínio Logico
+                </li>
+                <li data-lang-pt="Organização" data-lang-en="Organization">
+                  Organização
+                </li>
+                <li data-lang-pt="Focado" data-lang-en="Focused">Focado</li>
+                <li data-lang-pt="Comunicação" data-lang-en="Communication">
+                  Comunicação
+                </li>
+                <li data-lang-pt="Trabalho em Equipe" data-lang-en="Teamwork">
+                  Trabalho em Equipe
+                </li>
+                <li data-lang-pt="Comprometimento" data-lang-en="Commitment">
+                  Comprometimento
+                </li>
               </ul>
             </div>
           </ul>
@@ -111,67 +169,78 @@
       </section>
 
       <section class="acordeon">
-        <button class="trigger" type="button">Idiomas</button>
+        <button
+          class="trigger"
+          type="button"
+          data-lang-pt="Idiomas"
+          data-lang-en="Languages"
+        >
+          Idiomas
+        </button>
         <div class="content">
           <ul class="languages">
-            <li>Português (BR) - Fluente</li>
-            <li>Inglês - (Técnico/intermediário)</li>
+            <li
+              data-lang-pt="Português (BR) - Fluente"
+              data-lang-en="Portuguese (BR) - Fluent"
+            >
+              Português (BR) - Fluente
+            </li>
+            <li
+              data-lang-pt="Inglês - (Técnico/intermediário)"
+              data-lang-en="English - (Technical/intermediate)"
+            >
+              Inglês - (Técnico/intermediário)
+            </li>
           </ul>
         </div>
       </section>
 
-      <!-- <section class="acordeon">
-        <button class="trigger" type="button">Portfolio</button>
-
-        <div class="content">
-          <ul class="portfolio">
-            <li>
-              <span class="title">Projects in C</span>
-              <a
-                href="https://github.com/luccassouzaa/ProjetosC-Faculdade"
-                target="_blank"
-                >GitHub</a
-              >
-            </li>
-            <li>
-              <span class="title">Python salary counter per month</span>
-              <a
-                href="https://github.com/luccassouzaa/python-contador-de-m-s"
-                target="_blank"
-                >GitHub</a
-              >
-            </li>
-            <li>
-              <span class="title">Login page by me</span>
-              <a
-                href="https://github.com/luccassouzaa/LOGIN-PAGE-BY-me"
-                target="_blank"
-                >GitHub</a
-              >
-            </li>
-            <li>
-              <span class="title">Automation web</span>
-              <a
-                href="https://github.com/luccassouzaa/Cota-Deep--Inflact--Selenium"
-                target="_blank"
-                >GitHub</a
-              >
-            </li>
-          </ul>
-        </div>
-      </section> -->
-
       <section class="acordeon">
-        <button class="trigger" type="button">Expêriencia profissional</button>
+        <button
+          class="trigger"
+          type="button"
+          data-lang-pt="Expêriencia profissional"
+          data-lang-en="Professional Experience"
+        >
+          Expêriencia profissional
+        </button>
         <div class="content">
           <ul class="experience-professional">
             <li class="work">
+              <h2>Leega</h2>
+              <h5
+                data-lang-pt="Analista de segurança da informação junior"
+                data-lang-en="Junior Information Security Analyst"
+              >
+                Analista de segurança da informação junior
+              </h5>
+              <span
+                data-lang-pt="20/10/2023 - Atualmente"
+                data-lang-en="10/20/2023 - Present"
+                >20/10/2023 - Atualmente</span
+              >
+              <p
+                data-lang-pt="Governança de Acessos - Alelo"
+                data-lang-en="Access Governance - Alelo"
+              >
+                Governança de Acessos - Alelo
+              </p>
+            </li>
+            <li class="work">
               <h2>Enel</h2>
-              <h5>Estágiario Credit Analysis & Performance</h5>
-              <span>14/09/2023 - Atualmente</span>
-              <p>
-                Tenho experiência no setor de Credit Analysis & Performance,
-                onde concentro meus esforços no tratamento e análise de dados
+              <h5
+                data-lang-pt="Estagiário Credit Analysis & Performance"
+                data-lang-en="Intern Credit Analysis & Performance"
+              >
+                Estagiário Credit Analysis & Performance
+              </h5>
+              <span>14/09/2023 - 13/09/2025</span>
+              <p
+                data-lang-pt="Tenho experiência no setor de Credit Analysis & Performance, onde concentro meus esforços no tratamento e análise de dados utilizando Python, incluindo bibliotecas como Pandas, PlotlyExpress, Matplotlib e Selenium. Colaboro ativamente com a equipe de Business Intelligence (BI) para desenvolver estratégias mais eficazes com base nos insights extraídos dos dados. <br /> <br />Além disso, utilizo SQL para consultas de dados, PowerBI para criação de visualizações dinâmicas e Excel para automatizar tarefas e agilizar análises. Minha abordagem multifacetada e habilidades técnicas diversificadas me permitem adaptar-me facilmente às necessidades em evolução do ambiente empresarial."
+                data-lang-en="I have experience in the Credit Analysis & Performance sector, where I focus my efforts on data processing and analysis using Python, including libraries like Pandas, PlotlyExpress, Matplotlib, and Selenium. I actively collaborate with the Business Intelligence (BI) team to develop more effective strategies based on insights extracted from the data. <br /><br />Additionally, I use SQL for data queries, PowerBI for creating dynamic visualizations, and Excel to automate tasks and streamline analysis. My multifaceted approach and diverse technical skills allow me to easily adapt to the evolving needs of the business environment."
+              >
+                Tenho experiência no setor de Credit Analysis & Performance, onde
+                concentro meus esforços no tratamento e análise de dados
                 utilizando Python, incluindo bibliotecas como Pandas,
                 PlotlyExpress, Matplotlib e Selenium. Colaboro ativamente com a
                 equipe de Business Intelligence (BI) para desenvolver
@@ -185,60 +254,57 @@
                 facilmente às necessidades em evolução do ambiente empresarial.
               </p>
             </li>
-            <!-- <li class="work">
-              <h2>Daion jeans</h2>
-              <span>02/2022 - 08/2022</span>
-              <p>
-                Tenho alguma experiência no setor de marketing digital, onde uso
-                o Adobe Photoshop para criar flyers simples e fazer edições
-                básicas de imagens de produtos. Além disso, tenho alguma
-                familiaridade em administrar o e-commerce através da plataforma
-                Shopee e Instagram for Business.
-                <br />
-                <br />Estou continuamente desenvolvendo minhas habilidades nessa
-                área e estou entusiasmado em aprender e crescer
-                profissionalmente.
-              </p>
-            </li> -->
           </ul>
         </div>
       </section>
 
       <section class="acordeon">
-        <button class="trigger" type="button">Educação</button>
+        <button
+          class="trigger"
+          type="button"
+          data-lang-pt="Educação"
+          data-lang-en="Education"
+        >
+          Educação
+        </button>
         <div class="content">
           <ul class="education">
             <li class="university">
-              <h2>Universidade</h2>
-              <span>02/2022 - Cursando</span>
-              <p>
+              <h2 data-lang-pt="Universidade" data-lang-en="University">
+                Universidade
+              </h2>
+              <span
+                data-lang-pt="02/2022 - Cursando"
+                data-lang-en="02/2022 - Ongoing"
+                >02/2022 - Cursando</span
+              >
+              <p
+                data-lang-pt="UNICID - Universidade da Cidade de São Paulo <br /><br /> Estudante da área de tecnologia, experiências com Front-End: HTML5, CSS3 e JS. Back-End: PHP e Java, linguagens de programação: C, Java e Python."
+                data-lang-en="UNICID - University of the City of São Paulo <br /><br /> Technology student, experience with Front-End: HTML5, CSS3 and JS. Back-End: PHP and Java, programming languages: C, Java and Python."
+              >
                 UNICID - Universidade da Cidade de São Paulo <br /><br />
                 Estudante da área de tecnologia, experiências com Front-End:
                 HTML5, CSS3 e JS. Back-End: PHP e Java, linguagens de
                 programação: C, Java e Python.
               </p>
             </li>
-            <!-- <li class="course">
-              <h2>Designer Gráfico</h2>
-              <span>2016 - 2018</span>
-              <p>
-                SAGA - School of Art, Game and Animation <br /><br />
-                Estudos como: 3D, Photoshop (Manipulação de imagem, correção de
-                imagem, arte digital), After Effects (Criação de animação,
-                edição áudio e vídeo, efeitos realistas) e Illustrator (Criação
-                de logomarca/logotipo e experiência com identidade visual).
-              </p>
-            </li> -->
           </ul>
         </div>
       </section>
-      <!-- <section class="downloadcv">
-        <a href="assets/CV-Profissional.pdf" download="cv">
-          <button class="download">Download do curriculo</button>
-        </a>
-      </section> -->
-    </main>
 
-    <script src="assets/js/acordeon.js"></script>
+      <section class="downloadcv">
+        <a href="assets/CV_API.pdf" download="CV-LuccasSouza.pdf">
+          <button
+            class="download"
+            data-lang-pt="Download do Currículo"
+            data-lang-en="Download CV"
+          >
+            Download do Currículo
+          </button>
+        </a>
+      </section>
+      </main>
+
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
